@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "socialme"
-  },
   "api": {
     "projectId": "zcar8in5",
     "dataset": "production"
+  },
+  "project": {
+    "name": "socialme"
   },
   "plugins": [
     "@sanity/base",
