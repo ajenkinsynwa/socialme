@@ -14,15 +14,17 @@ const Home = () => {
   const [user, setUser] = useState();
   const scrollRef = useRef(null);
 
-  const userInfo = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
+
 
   useEffect(() => {
+    const userInfo = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
     const query = userQuery(userInfo?.googleId);
 
     client.fetch(query).then((data) => {
       setUser(data[0]);
     });
-  }, []);
+   
+  },[]);
 
   useEffect(() => {
     scrollRef.current.scrollTo(0, 0);

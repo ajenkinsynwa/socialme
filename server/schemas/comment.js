@@ -1,18 +1,17 @@
 export default {
-
   name: 'comment',
-  title: 'comment',
+  title: 'Comment',
   type: 'document',
   fields: [
     {
       name: 'postedBy',
-      title: 'Postedby',
-      type: 'postedBy'
+      title: 'PostedBy',
+      type: 'postedBy',
     },
     {
       name: 'comment',
       title: 'Comment',
-      type: 'string'
+      type: 'string',
     },
-  ]
-}
+  ],
+};

@@ -2,9 +2,8 @@ import React from 'react';
 import GoogleLogin from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
-import shareVideo from '../assets/share.mp4';
+import shareVideo from '../assets/world.mp4';
 import logo from '../assets/logowhite.png';
-
 import { client } from '../client';
 
 const Login = () => {
@@ -38,7 +37,7 @@ const Login = () => {
 
         <div className="absolute flex flex-col justify-center items-center top-0 right-0 left-0 bottom-0    bg-blackOverlay">
           <div className="p-5">
-            <img src={logo} width="130px" />
+            <img src={logo} alt='logoimgage' width="130px" />
           </div>
 
           <div className="shadow-2xl">
@@ -66,3 +65,4 @@ const Login = () => {
 };
 
 export default Login;
+

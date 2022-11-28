@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   name: 'user',
   title: 'User',
@@ -5,13 +6,14 @@ export default {
   fields: [
     {
       name: 'userName',
-      title: 'Username',
-      type: 'string'
+      title: 'UserName',
+      type: 'string',
     },
     {
       name: 'image',
       title: 'Image',
-      type: 'string'
+      type: 'string',
     },
-    ]
-  }
+  ],
+};
+
