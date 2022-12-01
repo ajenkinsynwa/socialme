@@ -1,4 +1,4 @@
 # socialme
-Social App Created For The Word 
+Social App Created For The World 
 
 # myFirstSocialApp
