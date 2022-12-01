@@ -1,7 +1,7 @@
 import React from 'react';
-import GoogleLogin from 'react-google-login';
+// import GoogleLogin from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
-import { FcGoogle } from 'react-icons/fc';
+// import { FcGoogle } from 'react-icons/fc';
 import shareVideo from '../assets/world.mp4';
 import logo from '../assets/logowhite.png';
 import { client } from '../client';
@@ -40,7 +40,7 @@ const Login = () => {
             <img src={logo} alt='logoimgage' width="130px" />
           </div>
 
-          <div className="shadow-2xl">
+          {/* <div className="shadow-2xl">
             <GoogleLogin
               clientId={`${process.env.REACT_APP_GOOGLE_API_TOKEN}`}
               render={(renderProps) => (
@@ -55,12 +55,12 @@ const Login = () => {
               )}
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
-              cookiePolicy="single_host_origin"
-            />
+              cookiePolicy="single_host_origin" */}
+            {/* /> */}
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
